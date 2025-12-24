@@ -10,14 +10,8 @@
     />
     <title>Potolki 777 - Toshkentda Natyajnoy Pataloklar</title>
     
-    <!-- Tailwind CSS -->
+    <!-- Tailwind CSS Play CDN (For Development/Preview) -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
-
     <script>
       tailwind.config = {
         theme: {
@@ -43,19 +37,41 @@
         }
       }
     </script>
-    <style>
-      html { scroll-behavior: smooth; }
-      body { font-family: 'Open Sans', sans-serif; }
-      h1, h2, h3, h4, h5, h6 { font-family: 'Playfair Display', serif; }
-      .gold-gradient {
-        background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+    
+    <!-- Custom Styles -->
+    <style type="text/tailwindcss">
+      @layer base {
+        html { scroll-behavior: smooth; }
+        body { @apply font-sans; }
+        h1, h2, h3, h4, h5, h6 { @apply font-heading; }
       }
-      .gold-text-gradient {
-        background: linear-gradient(135deg, #f59e0b 0%, #b45309 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+      @layer components {
+        .gold-gradient {
+          background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+        }
+        
+        /* Scroll Reveal Animations */
+        .reveal {
+          opacity: 0;
+          transform: translateY(30px);
+          transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .reveal.active {
+          opacity: 1;
+          transform: translateY(0);
+        }
+        
+        .reveal-delay-1 { transition-delay: 0.1s; }
+        .reveal-delay-2 { transition-delay: 0.2s; }
+        .reveal-delay-3 { transition-delay: 0.3s; }
       }
     </style>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+
     <script type="importmap">
     {
       "imports": {
@@ -67,7 +83,8 @@
     }
     </script>
   </head>
-  <body class="bg-slate-50 text-slate-800 antialiased">
+  <body class="bg-slate-50 text-slate-800 antialiased overflow-x-hidden">
     <div id="root"></div>
+    <script type="module" src="index.tsx"></script>
   </body>
 </html>

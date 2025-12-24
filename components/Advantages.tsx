@@ -26,12 +26,10 @@ const Advantages: React.FC<AdvantagesProps> = ({ t }) => {
 
   return (
     <section className="py-24 bg-slate-50 relative overflow-hidden">
-      {/* Decorative background elements */}
       <div className="absolute top-0 left-0 w-64 h-64 bg-gold-500/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-gold-500/5 rounded-full blur-3xl translate-x-1/3 translate-y-1/3"></div>
-
+      
       <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-16 max-w-3xl mx-auto">
+        <div className="text-center mb-16 max-w-3xl mx-auto reveal">
           <h2 className="text-3xl md:text-5xl font-heading font-bold text-slate-900 mb-6">
             {t.advantages.title}
           </h2>
@@ -44,7 +42,7 @@ const Advantages: React.FC<AdvantagesProps> = ({ t }) => {
             return (
               <div 
                 key={index} 
-                className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100 group hover:-translate-y-1"
+                className={`bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100 group hover:-translate-y-1 reveal reveal-delay-${(index % 3) + 1}`}
               >
                 <div className="w-16 h-16 bg-slate-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-gold-500 transition-colors duration-300">
                   {IconComponent && <IconComponent size={32} className="text-gold-500 group-hover:text-white transition-colors duration-300" />}
@@ -60,7 +58,7 @@ const Advantages: React.FC<AdvantagesProps> = ({ t }) => {
           })}
         </div>
 
-        <div className="text-center">
+        <div className="text-center reveal">
           <a
             href="#contact"
             onClick={(e) => handleScroll(e, '#contact')}
