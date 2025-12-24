@@ -18,7 +18,7 @@ const Navbar: React.FC<NavbarProps> = ({ lang, t, setLang }) => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -30,7 +30,16 @@ const Navbar: React.FC<NavbarProps> = ({ lang, t, setLang }) => {
     const element = document.getElementById(targetId);
     
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      const offset = 80; // Approximate navbar height
+      const bodyRect = document.body.getBoundingClientRect().top;
+      const elementRect = element.getBoundingClientRect().top;
+      const elementPosition = elementRect - bodyRect;
+      const offsetPosition = elementPosition - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
     }
   };
 
@@ -43,27 +52,25 @@ const Navbar: React.FC<NavbarProps> = ({ lang, t, setLang }) => {
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 transition-all duration-300 flex flex-col items-center ${
+      className={`fixed top-0 w-full z-50 transition-all duration-500 flex flex-col items-center ${
         isScrolled
           ? 'bg-white/95 backdrop-blur-md shadow-lg pb-2'
           : 'bg-transparent pb-4'
       }`}
     >
-      {/* Quick Number Top Bar - Premium Style */}
+      {/* Quick Number Top Bar */}
       <div 
         className={`w-full bg-slate-900 border-b border-white/5 transition-all duration-500 overflow-hidden flex justify-center items-center ${
           isScrolled ? 'h-0 opacity-0' : 'h-10 opacity-100'
         }`}
       >
-        <div className="container mx-auto px-4 md:px-6 flex justify-between items-center text-xs font-medium tracking-wider text-slate-400">
-           {/* Left: Work Hours */}
+        <div className="container mx-auto px-4 md:px-6 flex justify-between items-center text-[10px] md:text-xs font-medium tracking-wider text-slate-400">
            <div className="hidden md:flex items-center gap-2">
               <Clock size={12} className="text-gold-500" />
               <span>{t.nav.workHours}</span>
            </div>
 
-           {/* Right: Call Center */}
-           <a href={`tel:${PHONE_NUMBER.replace(/\s/g, '')}`} className="flex items-center gap-2 hover:text-white transition-colors ml-auto md:ml-0">
+           <a href={`tel:${PHONE_NUMBER.replace(/\s/g, '')}`} className="flex items-center gap-2 hover:text-white transition-colors mx-auto md:ml-auto md:mr-0">
              <span className="uppercase hidden sm:inline">{t.nav.callCenter}:</span>
              <div className="flex items-center gap-2 text-white">
                 <Phone size={12} className="text-gold-500 fill-current" />
@@ -88,10 +95,10 @@ const Navbar: React.FC<NavbarProps> = ({ lang, t, setLang }) => {
             <span className="relative text-gold-500 font-heading font-bold text-xl">777</span>
           </div>
           <div className="flex flex-col">
-            <span className={`font-heading font-bold text-xl tracking-wider leading-none ${isScrolled ? 'text-slate-900' : 'text-white'}`}>
+            <span className={`font-heading font-bold text-lg md:text-xl tracking-wider leading-none transition-colors duration-300 ${isScrolled ? 'text-slate-900' : 'text-white'}`}>
               POTOLKI
             </span>
-            <span className={`text-[10px] tracking-[0.2em] font-medium uppercase ${isScrolled ? 'text-gold-600' : 'text-gold-400'}`}>
+            <span className={`text-[9px] md:text-[10px] tracking-[0.2em] font-medium uppercase transition-colors duration-300 ${isScrolled ? 'text-gold-600' : 'text-gold-400'}`}>
               Tashkent
             </span>
           </div>
@@ -128,17 +135,17 @@ const Navbar: React.FC<NavbarProps> = ({ lang, t, setLang }) => {
         </div>
 
         {/* Mobile Toggle */}
-        <div className="md:hidden flex items-center gap-3">
+        <div className="md:hidden flex items-center gap-2">
            <LanguageSwitcher currentLang={lang} onSwitch={setLang} scrolled={isScrolled} />
            <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className={`p-2.5 rounded-xl border transition-colors ${
+            className={`p-2 rounded-xl border transition-colors ${
               isScrolled 
                 ? 'text-slate-800 border-slate-200 bg-slate-50' 
                 : 'text-white border-white/20 bg-white/10 backdrop-blur-md'
             }`}
           >
-            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
         </div>
       </div>
