@@ -2,6 +2,7 @@ import React from 'react';
 import { Translation } from '../types';
 import { PHONE_NUMBER, TELEGRAM_LINK } from '../constants';
 import { Phone, Ruler, ShieldCheck, Clock } from 'lucide-react';
+import home from './images/home.jpg'
 
 interface HeroProps {
   t: Translation;
@@ -27,7 +28,7 @@ const Hero: React.FC<HeroProps> = ({ t }) => {
       {/* Background with subtle animation */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?auto=format&fit=crop&q=90&w=1920" 
+          src={home} 
           alt="Ceiling" 
           className="w-full h-full object-cover brightness-[0.6] scale-105 animate-subtle-zoom"
         />

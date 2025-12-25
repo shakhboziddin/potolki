@@ -1,7 +1,7 @@
 import { Translation } from './types';
 
-export const PHONE_NUMBER = "+998 90 123 45 67";
-export const TELEGRAM_USERNAME = "potolki777_admin"; 
+export const PHONE_NUMBER = "+998948248777";
+export const TELEGRAM_USERNAME = "httpstmePatolki777"; 
 export const TELEGRAM_LINK = `https://t.me/${TELEGRAM_USERNAME}`;
 
 export const TG_BOT_TOKEN = "YOUR_BOT_TOKEN_HERE";
