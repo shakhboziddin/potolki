@@ -28,19 +28,23 @@ const Pricing: React.FC<PricingProps> = ({ t }) => {
             <div className="space-y-6">
                 <div className="flex justify-between items-center border-b border-white/10 pb-4">
                     <span className="text-lg font-medium">Mat / Satin</span>
-                    <span className="text-xl font-bold text-gold-400">~80,000 UZS / m²</span>
+                    <span className="text-xl font-bold text-gold-400">~30,000 UZS / m²</span>
                 </div>
                 <div className="flex justify-between items-center border-b border-white/10 pb-4">
                     <span className="text-lg font-medium">Glyanets (Lak)</span>
-                    <span className="text-xl font-bold text-gold-400">~90,000 UZS / m²</span>
+                    <span className="text-xl font-bold text-gold-400">~40,000 UZS / m²</span>
                 </div>
                 <div className="flex justify-between items-center border-b border-white/10 pb-4">
                     <span className="text-lg font-medium">Photo Print</span>
-                    <span className="text-xl font-bold text-gold-400">~150,000 UZS / m²</span>
+                    <span className="text-xl font-bold text-gold-400">~70,000 UZS / m²</span>
                 </div>
-                <div className="flex justify-between items-center pb-2">
-                    <span className="text-lg font-medium">LED Lines</span>
-                    <span className="text-xl font-bold text-gold-400">Individual</span>
+                <div className="flex justify-between items-center pb-2 border-b border-white/10 pb-4">
+                    <span className="text-lg font-medium">O'rnatib berish</span>
+                    <span className="text-md w-[50%] font-bold text-gold-400">Hajmiga qarab 80,000 - 100,000 UZS / m²</span>
+                </div>
+                                <div className="flex justify-between items-center pb-2">
+                    <span className="text-lg font-medium">Bizda barchasi seh narhida!</span>
+                    <span className="text-md w-[50%] font-bold text-gold-400">O'zimiz ishlab chiqaramiz va o'rnatib beramiz</span>
                 </div>
             </div>
             

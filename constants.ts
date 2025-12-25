@@ -1,4 +1,24 @@
 import { Translation } from './types';
+// importing images below
+import mate from './components/images/mate.jpg'
+import glance from './components/images/glyans.jpg'
+import stop from './components/images/2step.jpg'
+import led from './components/images/led.jpg'
+import ten from './components/images/ten.jpg'
+import custom from './components/images/custom.jpg'
+
+
+// importing project photos below
+import pr1 from './components/images/pr1.jpg'
+import pr2 from './components/images/pr2.jpg'
+import pr3 from './components/images/pr3.jpg'
+import pr4 from './components/images/pr4.jpg'
+import pr5 from './components/images/pr5.jpg'
+import pr6 from './components/images/pr6.jpg'
+import pr7 from './components/images/pr7.jpg'
+import pr8 from './components/images/pr8.jpg'
+import pr9 from './components/images/pr9.jpg'
+
 
 export const PHONE_NUMBER = "+998948248777";
 export const TELEGRAM_USERNAME = "httpstmePatolki777"; 
@@ -45,27 +65,32 @@ export const CONTENT: Record<string, Translation> = {
         {
           title: "Матовые потолки",
           description: "Спокойная элегантность и уют для спальни и гостиной",
-          image: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&q=80&w=800",
+          image: mate,
         },
         {
           title: "Глянцевые потолки",
           description: "Эффект дорогого интерьера и визуальное расширение пространства",
-          image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&q=80&w=800",
+          image: glance,
         },
         {
           title: "Двухуровневые потолки",
           description: "Уникальное дизайнерское решение любой сложности",
-          image: "https://images.unsplash.com/photo-1617103996702-96ff29b1c467?auto=format&fit=crop&q=80&w=800",
+          image: stop,
         },
         {
           title: "Потолки с LED-подсветкой",
           description: "Современный стиль с эффектом парящего потолка",
-          image: "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&q=80&w=800",
+          image: led,
         },
         {
           title: "Теневые профили",
           description: "Идеально ровный зазор между стеной и потолком",
-          image: "https://images.unsplash.com/photo-1534349762230-e0cadf78f505?auto=format&fit=crop&q=80&w=800",
+          image: ten,
+        },
+        {
+          title: "Кастом патолки с изображением",
+          description: "Кастомные картинки",
+          image: custom,
         },
       ],
     },
@@ -74,12 +99,12 @@ export const CONTENT: Record<string, Translation> = {
       subtitle: "Лучшие проекты, реализованные нашей командой в Ташкенте",
       expand: "Показать больше",
       items: [
-        { id: 1, title: "Гостиная в ЖК 'Tashkent City'", category: "Премиум", image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80&w=800" },
-        { id: 2, title: "Современная спальня, Чиланзар", category: "Матовый", image: "https://images.unsplash.com/photo-1560184897-ae75f418493e?auto=format&fit=crop&q=80&w=800" },
-        { id: 3, title: "Двухуровневый зал, Юнусабад", category: "Сложные формы", image: "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&q=80&w=800" },
-        { id: 4, title: "Кухня в стиле лофт, Мирзо-Улугбек", category: "Глянцевый", image: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&q=80&w=800" },
-        { id: 5, title: "LED освещение в прихожей", category: "Подсветка", image: "https://images.unsplash.com/photo-1507652313519-d4c9174996dd?auto=format&fit=crop&q=80&w=800" },
-        { id: 6, title: "Детская комната, Сергели", category: "Эко-материалы", image: "https://images.unsplash.com/photo-1544457070-4cd773b4d71e?auto=format&fit=crop&q=80&w=800" },
+        { id: 1, title: "Гостиная в ЖК 'Tashkent City'", category: "Премиум", image: pr1 },
+        { id: 2, title: "Современная спальня, Чиланзар", category: "Матовый", image: pr3 },
+        { id: 3, title: "Двухуровневый зал, Юнусабад", category: "Сложные формы", image: pr7 },
+        { id: 4, title: "Кухня в стиле лофт, Мирзо-Улугбек", category: "Глянцевый", image: pr8 },
+        { id: 5, title: "LED освещение в прихожей", category: "Подсветка", image: pr5 },
+        { id: 6, title: "Детская комната, Сергели", category: "Эко-материалы", image: pr9},
       ]
     },
     reviews: {
@@ -152,29 +177,34 @@ export const CONTENT: Record<string, Translation> = {
       cta: "Buyurtma berish",
       items: [
         {
-          title: "Mat pataloklar",
+          title: "Matoviy pataloklar",
           description: "Yotoqxona va mehmonxonalar uchun sokin va nafis ko‘rinish",
-          image: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&q=80&w=800",
+          image: mate,
         },
         {
           title: "Glyanets pataloklar",
           description: "Hashamatli dizayn va xonani kengaytirib ko‘rsatish effekti",
-          image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&q=80&w=800",
+          image: glance,
         },
         {
           title: "Ikki darajali pataloklar",
           description: "Murakkab va takrorlanmas dizaynerlik yechimlari",
-          image: "https://images.unsplash.com/photo-1617103996702-96ff29b1c467?auto=format&fit=crop&q=80&w=800",
+          image: stop,
         },
         {
           title: "LED pataloklar",
           description: "Zamonaviy yoritish va 'uchuvchi' patalok effekti",
-          image: "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&q=80&w=800",
+          image: led,
         },
         {
           title: "Tenevoy profillar",
           description: "Devor va patalok o‘rtasida mukammal va chiroyli tirqish",
-          image: "https://images.unsplash.com/photo-1534349762230-e0cadf78f505?auto=format&fit=crop&q=80&w=800",
+          image: ten,
+        },
+        {
+          title: "Castom buyurtma asosida ",
+          description: "Buyurtma asosida istalgan sur'at tushurilgan pataloklar",
+          image: custom,
         },
       ],
     },
@@ -183,12 +213,12 @@ export const CONTENT: Record<string, Translation> = {
       subtitle: "Toshkent shahridagi eng yaxshi va sifatli loyihalarimiz",
       expand: "Ko'proq ko'rish",
       items: [
-        { id: 1, title: "'Tashkent City' xonadonlaridagi loyiha", category: "Premium", image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80&w=800" },
-        { id: 2, title: "Zamonaviy yotoqxona, Chilonzor", category: "Matli", image: "https://images.unsplash.com/photo-1560184897-ae75f418493e?auto=format&fit=crop&q=80&w=800" },
-        { id: 3, title: "Ikki darajali zal, Yunusobod", category: "Murakkab", image: "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&q=80&w=800" },
-        { id: 4, title: "Oshxona dizayni, Mirzo-Ulug'bek", category: "Glyanets", image: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&q=80&w=800" },
-        { id: 5, title: "Dahlizdagi LED yoritish", category: "Yoritish", image: "https://images.unsplash.com/photo-1507652313519-d4c9174996dd?auto=format&fit=crop&q=80&w=800" },
-        { id: 6, title: "Bolalar xonasi, Sergeli", category: "Eko", image: "https://images.unsplash.com/photo-1544457070-4cd773b4d71e?auto=format&fit=crop&q=80&w=800" },
+        { id: 1, title: "'Tashkent City' xonadonlaridagi loyiha", category: "Premium", image: pr1},
+        { id: 2, title: "Zamonaviy yotoqxona, Chilonzor", category: "Matli", image: pr3 },
+        { id: 3, title: "Ikki darajali zal, Yunusobod", category: "Murakkab", image: pr7 },
+        { id: 4, title: "Oshxona dizayni, Mirzo-Ulug'bek", category: "Glyanets", image: pr8 },
+        { id: 5, title: "Dahlizdagi LED yoritish", category: "Yoritish", image: pr5 },
+        { id: 6, title: "Bolalar xonasi, Sergeli", category: "Eko", image: pr9 },
       ]
     },
     reviews: {
