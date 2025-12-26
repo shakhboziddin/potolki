@@ -143,7 +143,7 @@ export const CONTENT: Record<string, Translation> = {
       title: "Контакты",
       phone: "Телефон",
       telegram: "Telegram администратор",
-      address: "г. Ташкент, ул. Амира Темура, 107",
+      address: "Главный офис: улица Мукими, 29, 100115, Ташкент, Узбекистан (У нас есть филиалы во всех районах города Ташкента)",
       workHours: "круглосуточно",
     },
     meta: {
@@ -267,7 +267,7 @@ export const CONTENT: Record<string, Translation> = {
       title: "Bog'lanish",
       phone: "Telefon",
       telegram: "Telegram admin",
-      address: "Toshkent sh., Amir Temur ko'chasi, 107",
+      address: "Bosh ofis: Mukimi Street 29, 100115, Tashkent, Uzbekistan (Toshkent shahrining barcha tumanlarida fillialarimiz bor)",
       workHours: "24/7",
     },
     meta: {

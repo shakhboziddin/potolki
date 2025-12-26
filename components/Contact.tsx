@@ -192,7 +192,7 @@ const Contact: React.FC<ContactProps> = ({ t }) => {
             <div className="flex-grow rounded-[2.5rem] overflow-hidden shadow-2xl border-8 border-slate-50 min-h-[350px] transform hover:scale-[1.01] transition-transform">
               <iframe
                 title="Tashkent Map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95901.41999263433!2d69.20649974558005!3d41.31108398453448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b0cc379e9c3%3A0xa5a9323b403c7275!2sTashkent%2C%20Uzbekistan!5e0!3m2!1sen!2s!4v1714555555555!5m2!1sen!2s"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6170.892391022729!2d69.22184229639684!3d41.29560139361584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8a4ad643b1c9%3A0x74388d3136c65939!2sMukimi%20Street%2029%2C%20100115%2C%20Tashkent%2C%20Uzbekistan!5e0!3m2!1sen!2sus!4v1766743248412!5m2!1sen!2sus"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
