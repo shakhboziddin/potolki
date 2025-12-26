@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://potolki777.uz/sitemap.xml
