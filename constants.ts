@@ -4,7 +4,7 @@ import mate from './components/images/mate.jpg'
 import glance from './components/images/glyans.jpg'
 import stop from './components/images/2step.jpg'
 import led from './components/images/led.jpg'
-import ten from './components/images/ten.jpg'
+import ten from './components/images/tene.jpg'
 import custom from './components/images/custom.jpg'
 
 
@@ -37,7 +37,7 @@ export const CONTENT: Record<string, Translation> = {
       contacts: "Контакты",
       callBtn: "Позвонить",
       callCenter: "Колл-центр",
-      workHours: "Пн-Вс 09:00 - 20:00",
+      workHours: "круглосуточно",
     },
     hero: {
       headline: "Натяжные потолки премиум-класса в Ташкенте",
@@ -104,7 +104,16 @@ export const CONTENT: Record<string, Translation> = {
         { id: 3, title: "Двухуровневый зал, Юнусабад", category: "Сложные формы", image: pr7 },
         { id: 4, title: "Кухня в стиле лофт, Мирзо-Улугбек", category: "Глянцевый", image: pr8 },
         { id: 5, title: "LED освещение в прихожей", category: "Подсветка", image: pr5 },
-        { id: 6, title: "Детская комната, Сергели", category: "Эко-материалы", image: pr9},
+        { id: 6, title: "Ванная комната, Сергели", category: "Эко-материалы", image: pr9},
+        { id: 7, title: "Спальня в минималистичном стиле, Яккасарай", category: "Матовый", image: pr2 },
+{ id: 8, title: "Гостиная с подсветкой потолка, Алмазар", category: "Подсветка", image: pr1  },
+{ id: 9, title: "Детская комната с фигурным потолком", category: "Сложные формы", image: pr1  },
+{ id: 10, title: "Кухня-студия в современном стиле, Шайхантахур", category: "Глянцевый", image: pr1  },
+{ id: 11, title: "Офисное помещение с LED освещением", category: "Премиум", image: pr1  },
+{ id: 12, title: "Коридор с экологичными материалами, Бектемир", category: "Эко-материалы", image: pr1  },
+{ id: 13, title: "Зал в классическом стиле, Яшнабад", category: "Премиум", image: pr1  },
+{ id: 14, title: "Ванная комната с матовым потолком", category: "Матовый", image: pr1  },
+{ id: 15, title: "Коммерческое помещение, ТЦ в центре города", category: "Глянцевый", image: pr1  },
       ]
     },
     reviews: {
@@ -135,7 +144,7 @@ export const CONTENT: Record<string, Translation> = {
       phone: "Телефон",
       telegram: "Telegram администратор",
       address: "г. Ташкент, ул. Амира Темура, 107",
-      workHours: "Пн-Вс: 09:00 - 20:00",
+      workHours: "круглосуточно",
     },
     meta: {
       title: "Натяжные потолки в Ташкенте | Potolki 777",
@@ -151,7 +160,7 @@ export const CONTENT: Record<string, Translation> = {
       contacts: "Bog‘lanish",
       callBtn: "Qo‘ng‘iroq",
       callCenter: "Aloqa markazi",
-      workHours: "Dush-Yak 09:00 - 20:00",
+      workHours: "24/7",
     },
     hero: {
       headline: "Toshkentda premium natyajnoy pataloklar",
@@ -218,7 +227,17 @@ export const CONTENT: Record<string, Translation> = {
         { id: 3, title: "Ikki darajali zal, Yunusobod", category: "Murakkab", image: pr7 },
         { id: 4, title: "Oshxona dizayni, Mirzo-Ulug'bek", category: "Glyanets", image: pr8 },
         { id: 5, title: "Dahlizdagi LED yoritish", category: "Yoritish", image: pr5 },
-        { id: 6, title: "Bolalar xonasi, Sergeli", category: "Eko", image: pr9 },
+        { id: 6, title: "Vanna xonasi, Sergeli", category: "Eko", image: pr9 },
+        { id: 7, title: "Minimalistik uslubdagi yotoqxona, Yakkasaroy", category: "Mat", image: pr1  },
+{ id: 8, title: "Shift yoritilishi bilan mehmonxona, Olmazor", category: "Yoritish", image: pr1  },
+{ id: 9, title: "Figurali shiftli bolalar xonasi", category: "Murakkab shakllar", image: pr1  },
+{ id: 10, title: "Zamonaviy uslubdagi oshxona-studiya, Shayxontohur", category: "Glyanets", image: pr1  },
+{ id: 11, title: "LED yoritishli ofis xonasi", category: "Premium", image: pr1  },
+{ id: 12, title: "Ekologik materiallardan foydalanilgan koridor, Bektemir", category: "Eko-materiallar", image: pr1  },
+{ id: 13, title: "Klassik uslubdagi zal, Yashnobod", category: "Premium", image: pr1  },
+{ id: 14, title: "Mat shiftli vannaxona", category: "Mat", image: pr1  },
+{ id: 15, title: "Shahar markazidagi savdo majmuasidagi tijorat xonasi", category: "Glyanets", image: pr1  },
+
       ]
     },
     reviews: {
@@ -249,7 +268,7 @@ export const CONTENT: Record<string, Translation> = {
       phone: "Telefon",
       telegram: "Telegram admin",
       address: "Toshkent sh., Amir Temur ko'chasi, 107",
-      workHours: "Dush-Yak: 09:00 - 20:00",
+      workHours: "24/7",
     },
     meta: {
       title: "Toshkentda Natyajnoy Pataloklar | Potolki 777",
